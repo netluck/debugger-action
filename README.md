@@ -7,7 +7,7 @@ Interactive debugger for GitHub Actions
 ```
 steps:
 - name: Setup Debug Session
-  uses: P3TERX/debugger-action@master
+  uses: Netluck/debugger-action@master
 ```
 
 In the log for the action you will see:
@@ -15,15 +15,15 @@ In the log for the action you will see:
 ```
 To connect to this session copy-n-paste the following into a terminal or browser:
 
-ssh Y26QeagDtsPXp2mT6me5cnMRd@nyc1.tmate.io
+ssh vdQafEYfAfTQm59V6867B9REE@nyc1.tmate.io
 
-https://tmate.io/t/Y26QeagDtsPXp2mT6me5cnMRd
+https://tmate.io/t/vdQafEYfAfTQm59V6867B9REE
 ```
 > TIPS: This message is displayed 3 times, every 30 seconds.
 
 Simply follow the instructions and copy the ssh command into your terminal to create an ssh connection the running instance. The session will close immedeatly after closing the ssh connection to the running instance.
 
-There is a global timeout after 30 minutes. This will close any open ssh sessions. To prevent the session from being terminated run:
+There is a global timeout after 60 minutes. This will close any open ssh sessions. To prevent the session from being terminated run:
 
 ```
 touch /tmp/keepalive
